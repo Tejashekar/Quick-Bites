@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Poppins font by google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Importing styles.css -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>QuickCravings</title>
+  </head>
+  <body>
+    <!-- Banner section / herosection -->
+    <section class="Herosection">
+        <div class="Herosection__title_cointainer">
+          <img src="Images/WhatsApp Image 2024-12-09 at 15.57.31_6d6bf7df.jpg" class="Herosection_logo">
+          <h1 class="Herosection__title_text">Lazy to Cook? ORDER NOW !!  <i class="fa-regular fa-face-grin-hearts"></i></h1>
+          
+        </div>
+      
+    </section>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">QuickCravings</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="homeLink" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://play.google.com/store/apps/details?id=com.application.zomato&hl=en_IN&pli=1">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="container mt-5">
+                        <!-- Signup Button -->
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signupModal">
+                            Sign Up
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="signupForm">
+                    <div class="mb-3">
+                        <label for="signupName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="signupName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="signupPassword" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <!-- Carousal  -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://th.bing.com/th/id/OIP.IbGSDfYdFg56BVSTPyDiqgHaD2?rs=1&pid=ImgDetMain" class="d-block w-100" alt="A Burger">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.thestatesman.com/wp-content/uploads/2017/12/south-indian.jpg" class="d-block w-100" alt="...">
+            
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/OIP.fHkvw7wq0KtTOX8W6sYJSwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="d-block w-100" alt="...">
+            
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Cards -->
+      <h1 class="text-center">Food Menu</h1>
+    <table class="table table-bordered">
+        <tr>
+            <!-- Food Item 1 -->
+            <td>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.karnatakatourism.org/wp-content/uploads/2020/05/bisi-bele-bhaat.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bisi Bele Bhaat</h5>
+                            <p class="card-text">A spicy and tangy rice and vegetable dish.</p>
+                            <p class="card-text">20 $</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Bisi Bele Bhaat" data-price="20">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <!-- Food Item 2 -->
+            <td>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/736x/e8/dc/7f/e8dc7f0b59b8602ba30621dee3c6291c.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Masala Dosa</h5>
+                            <p class="card-text">Crispy fermented rice crepe filled with spiced potato mixture.</p>
+                            <p class="card-text">30 $</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Masala Dosa" data-price="30">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            
+            <!-- Food Item 3 -->
+            <td>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://static.toiimg.com/thumb/86386635.cms?imgsize=50106&width=800&height=800" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Uppittu</h5>
+                            <p class="card-text">A savory porridge dish made with semolina and vegetables.</p>
+                            <p class="card-text">Free</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Uppittu" data-price="0">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <!-- Food Item 4 -->
+            <td>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYPFu7zDtA0JmsvGTG0Ube4kR3JFFOqBjpOA&s" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Puri</h5>
+                            <p class="card-text">Deep-fried unleavened wheat bread, served with vegetables.</p>
+                            <p class="card-text">15 $</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Puri" data-price="15">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <!-- Food Item 5 -->
+            <td>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGrVwh3oKkUW4xXQGqPRQJjA9FrG0msksXew&s" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lemon Rice</h5>
+                            <p class="card-text">A flavorful rice dish made with lemon juice and seasoning.</p>
+                            <p class="card-text">25 $</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Lemon Rice" data-price="25">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <!-- Food Item 6 -->
+            <td>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://th.bing.com/th/id/OIP.zaAHu3Hdnd8g6iI-46AYhgHaE8?w=299&h=199&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Filter Coffee</h5>
+                            <p class="card-text">Traditional South Indian coffee made by percolating freshly ground coffee beans.</p>
+                            <p class="card-text">5 $</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Filter Coffee" data-price="5">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Cart</h2>
+    <table class="table table-bordered cart-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+    <h3>Total: <span id="total-price">0</span> $</h3>
+
+    
+
+<!-- Order Now Button -->
+<button id="order-now" class="btn btn-success">Order Now</button>
+
+<!-- QR Code Display -->
+<div id="qr-code-container" style="display: none; margin-top: 20px; text-align: center;">
+    <h3>Your Bill QR Code:</h3>
+    <div id="qr-code"></div>
+    <img src="https://th.bing.com/th/id/OIP.475sj6R0A1guhH7edkpWhQHaHa?rs=1&pid=ImgDetMain" class="qr_code" alt="..."> 
+</div>
+
+
+    <script>
+    // Example: Handle form submission
+    document.getElementById('signupForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+          const name = document.getElementById('signupName').value;
+          const email = document.getElementById('signupEmail').value;
+          const password = document.getElementById('signupPassword').value;
+
+          alert(`Signed up successfully with\nName: ${name}\nEmail: ${email}`);
+          // Close the modal after submission
+          const modal = bootstrap.Modal.getInstance(document.getElementById('signupModal'));
+          modal.hide();
+      });
+    document.addEventListener('DOMContentLoaded', function () {
+    // Existing code for adding/removing items from the cart
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    let cart = [];
+    
+    // Add event listeners to "Add to Cart" buttons
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', addToCart);
+    });
+
+    // Function to add an item to the cart
+    function addToCart(event) {
+        const name = event.target.getAttribute('data-name');
+        const price = parseFloat(event.target.getAttribute('data-price'));
+
+        // Add item to cart array
+        cart.push({ name, price });
+
+        // Update the cart and the total price display
+        updateCart();
+    }
+
+    // Function to update the cart display
+    function updateCart() {
+        const cartItemsElement = document.getElementById('cart-items');
+        const totalPriceElement = document.getElementById('total-price');
+        
+        // Clear current cart display
+        cartItemsElement.innerHTML = '';
+
+        let total = 0;
+
+        cart.forEach((item, index) => {
+            const row = document.createElement('tr');
+
+            const itemNameCell = document.createElement('td');
+            itemNameCell.textContent = item.name;
+            row.appendChild(itemNameCell);
+
+            const itemPriceCell = document.createElement('td');
+            itemPriceCell.textContent = `${item.price} $`;
+            row.appendChild(itemPriceCell);
+
+            const removeButtonCell = document.createElement('td');
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.classList.add('btn', 'btn-danger');
+            removeButton.addEventListener('click', () => removeItem(index));
+            removeButtonCell.appendChild(removeButton);
+            row.appendChild(removeButtonCell);
+
+            cartItemsElement.appendChild(row);
+
+            total += item.price;
+        });
+
+        // Update total price
+        totalPriceElement.textContent = total.toFixed(2);
+    }
+
+    // Function to remove an item from the cart
+    function removeItem(index) {
+        cart.splice(index, 1); // Remove item from cart array
+        updateCart(); // Update the cart display
+    }
+
+    // Add event listener for Order Now button
+    document.getElementById('order-now').addEventListener('click', function () {
+        const totalAmount = document.getElementById('total-price').textContent;
+
+        // Generate the QR code with the total bill amount
+        const qrCodeContainer = document.getElementById('qr-code-container');
+        const qrCodeElement = document.getElementById('qr-code');
+        
+        // Show the QR code container
+        qrCodeContainer.style.display = 'block';
+
+        // Clear any previous QR code
+        qrCodeElement.innerHTML = '';
+
+        // Generate the QR code
+        QRCode.toCanvas(qrCodeElement, `Total: ${totalAmount} $`, function (error) {
+            if (error) console.error(error);
+        });
+    });
+});
+
+    </script>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+      <div style="max-width: 1200px; margin: auto;">
+          <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+              <!-- About Section -->
+              <div style="flex: 1; min-width: 200px; margin: 10px;">
+                  <h3>About Us</h3>
+                  <p>QuickBites is committed to providing high-quality edibles with less time !!!</p>
+              </div>
+              
+              <!-- Quick Links -->
+              <div style="flex: 1; min-width: 200px; margin: 10px;">
+                  <h3>Quick Links</h3>
+                  <ul style="list-style-type: none; padding: 0;">
+                      <li><a href="#" style="color: #fff; text-decoration: none;">Home</a></li>
+                      <li><a href="#" style="color: #fff; text-decoration: none;">Services</a></li>
+                      <li><a href="#" style="color: #fff; text-decoration: none;">About</a></li>
+                      <li><a href="#" style="color: #fff; text-decoration: none;">Contact</a></li>
+                  </ul>
+              </div>
+              
+              <!-- Contact Info -->
+              <div style="flex: 1; min-width: 200px; margin: 10px;">
+                  <h3>Contact Us</h3>
+                  <p>Email: quickbites10min@gmail.com</p>
+                  <p>Phone: +91 8900123456</p>
+                  <p>Address: DSATM college, Near Art of Living, Kanakpura Main Rd</p>
+              </div>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div style="margin-top: 20px;">
+              <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none;">Twitter</a> |
+              <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none;">Instagram</a>
+          </div>
+          
+          <!-- Copyright -->
+          <div style="margin-top: 20px; font-size: 14px;">
+              <p>&copy; 2024 QuickBites. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+    <!-- Scripts for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  </html>
